@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_black"
+    tools:context=".ui.main.MainFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movies_recycler_view"
+            style="@style/CollectionView"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_movie"/>
+        <ImageView
+            android:id="@+id/ivEggCry"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/tvNoMovieFound"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/egg_empty"
+            />
+        <TextView
+            android:id="@+id/tvNoMovieFound"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/no_movie_found_please_search"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

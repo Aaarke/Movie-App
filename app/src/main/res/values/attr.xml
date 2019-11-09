@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FixedImageView">
+        <attr name="imageAspectRatio" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="AspectLockedFrameLayout">
+        <attr name="aspectRatio" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="AnimatorStateView">
+        <attr name="messageText" format="string" />
+        <attr name="messageImage" format="reference" />
+    </declare-styleable>
+
+
+</resources>

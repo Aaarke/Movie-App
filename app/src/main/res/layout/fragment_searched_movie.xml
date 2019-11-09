@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_black"
+    tools:context=".ui.main.SearchedMovieFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/rvSearchedMovie"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+      </androidx.recyclerview.widget.RecyclerView>
+      <ImageView
+          android:id="@+id/ivEggCrySearch"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_above="@+id/tvNoSearchResult"
+          android:layout_centerInParent="true"
+          android:layout_marginBottom="15dp"
+          android:src="@drawable/egg_empty"
+          />
+
+      <TextView
+          android:id="@+id/tvNoSearchResult"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:text="@string/no_search_result"
+          android:textSize="18sp"
+          android:layout_centerInParent="true"
+          android:gravity="center_horizontal"
+          />
+   </RelativeLayout>
+
+
+</FrameLayout>
